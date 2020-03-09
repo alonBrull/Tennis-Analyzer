@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/stats_background">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/stats_IMG_size"
+                android:layout_height="@dimen/stats_IMG_size"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ic_stats_score" />
+
+            <ImageView
+                android:layout_width="@dimen/stats_IMG_size"
+                android:layout_height="@dimen/stats_IMG_size"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/stats_margin_icons"
+                android:background="@drawable/ic_stats_muscle" />
+
+            <ImageView
+                android:layout_width="@dimen/stats_IMG_size"
+                android:layout_height="@dimen/stats_IMG_size"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/stats_margin_icons"
+                android:background="@drawable/ic_stats_average" />
+
+            <ImageView
+                android:layout_width="@dimen/stats_IMG_size"
+                android:layout_height="@dimen/stats_IMG_size"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/stats_margin_icons"
+                android:background="@drawable/ic_stats_counting" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.github.capur16.digitspeedviewlib.DigitSpeedView
+                android:id="@+id/stats_DIGIT_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:backgroundColor="@color/stats_background"
+                app:disableBackgroundImage="true"
+                app:showUnit="false"
+                app:speed="00"
+                app:speedTextColor="@color/stats_text"
+                app:speedTextSize="@dimen/stats_TXT_allStats_size"
+                app:unitTextColor="@color/stats_text"
+                app:unitTextSize="@dimen/stats_TXT_allunits_size" />
+
+            <com.github.capur16.digitspeedviewlib.DigitSpeedView
+                android:id="@+id/stats_DIGIT_maxSwing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:backgroundColor="@color/stats_background"
+                app:disableBackgroundImage="true"
+                app:showUnit="true"
+                app:speed="00"
+                app:speedTextColor="@color/stats_text"
+                app:speedTextSize="@dimen/stats_TXT_allStats_size"
+                app:unit="(m/s^2)"
+                app:unitTextColor="@color/stats_text"
+                app:unitTextSize="@dimen/stats_TXT_allunits_size" />
+
+            <com.github.capur16.digitspeedviewlib.DigitSpeedView
+                android:id="@+id/stats_DIGIT_avrageSwing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:backgroundColor="@color/stats_background"
+                app:disableBackgroundImage="true"
+                app:showUnit="true"
+                app:speed="0"
+                app:speedTextColor="@color/stats_text"
+                app:speedTextSize="@dimen/stats_TXT_allStats_size"
+                app:unit="(m/s^2)"
+                app:unitTextColor="@color/stats_text"
+                app:unitTextSize="@dimen/stats_TXT_allunits_size" />
+
+            <com.github.capur16.digitspeedviewlib.DigitSpeedView
+                android:id="@+id/stats_DIGIT_swingCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:backgroundColor="@color/stats_background"
+                app:disableBackgroundImage="true"
+                app:showUnit="false"
+                app:speed="0"
+                app:speedTextColor="@color/stats_text"
+                app:speedTextSize="@dimen/stats_TXT_allStats_size"
+                app:unitTextColor="@color/stats_text"
+                app:unitTextSize="@dimen/stats_TXT_allunits_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

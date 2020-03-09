@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_RLY_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <VideoView
+        android:id="@+id/main_VID_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/main_rotLY_size"
+        android:layout_height="@dimen/main_rotLY_size"
+        android:layout_above="@+id/main_BTN_start"
+        android:layout_marginBottom="@dimen/main_margin_rotView_bottom"
+        android:layout_centerHorizontal="true">
+
+        <com.nipunbirla.swipe3drotateview.Swipe3DRotateView
+            android:id="@+id/main_rotateView_sessionType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="@dimen/main_rotView_size"
+                android:layout_height="@dimen/main_rotView_size"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_main_practice"
+                android:visibility="invisible" />
+
+            <FrameLayout
+                android:layout_width="@dimen/main_rotView_size"
+                android:layout_height="@dimen/main_rotView_size"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_main_versus" />
+
+        </com.nipunbirla.swipe3drotateview.Swipe3DRotateView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/main_BTN_start"
+        android:layout_width="@dimen/main_BTN_start_size"
+        android:layout_height="@dimen/main_BTN_start_size"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_main_racket" />
+
+
+    <RelativeLayout
+        android:id="@+id/main_RLY_prevBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_IMG_colorDark"
+            android:background="@color/darkBlue" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_IMG_colorBright"
+            android:layout_margin="@dimen/main_IMG_colorDark_margin"
+            android:background="@color/lightBlue" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/main_FRM_previousSessions"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_FRM_prev_height"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/main_FRM_prev_padding"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/main_BTN_prev"
+        android:layout_width="@dimen/main_BTN_prev_size"
+        android:layout_height="@dimen/main_BTN_prev_size"
+        android:layout_below="@+id/main_BTN_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/main_margin_start_prev"
+        android:background="@drawable/ic_main_tournament" />
+
+</RelativeLayout>

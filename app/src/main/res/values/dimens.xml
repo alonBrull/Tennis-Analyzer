@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //**************// activity_main //**************//
+
+    <dimen name="main_BTN_start_size">200dp</dimen>
+
+    <dimen name="main_BTN_prev_size">100dp</dimen>
+
+    <dimen name="main_margin_start_prev">90dp</dimen>
+
+    <dimen name="main_rotLY_size">100dp</dimen>
+    <dimen name="main_rotView_size">90dp</dimen>
+    <dimen name="main_margin_rotView_bottom">30dp</dimen>
+
+    <dimen name="main_IMG_circle_size">90dp</dimen>
+    <dimen name="main_IMG_colorBright">170dp</dimen>
+    <dimen name="main_IMG_colorDark">180dp</dimen>
+    <dimen name="main_IMG_colorDark_margin">5dp</dimen>
+
+    <dimen name="main_FRM_prev_width">150dp</dimen>
+    <dimen name="main_FRM_prev_height">180dp</dimen>
+    <dimen name="main_FRM_prev_padding">15dp</dimen>
+
+    //**************// activity_session //**************//
+
+    <dimen name="session_BTN_startPause_size">100dp</dimen>
+    <dimen name="session_BTN_startPause_text_size">20sp</dimen>
+
+    <dimen name="session_BTN_stop_size">50dp</dimen>
+    <dimen name="session_BTN_stop_text_size">10sp</dimen>
+    <dimen name="session_margin_stop">20dp</dimen>
+
+    <dimen name="session_TXT_timer_size">40sp</dimen>
+    <dimen name="session_marginTop_timer">20dp</dimen>
+
+    <dimen name="session_FRM_stats_width">200dp</dimen>
+    <dimen name="session_FRM_stats_hight">200dp</dimen>
+    <dimen name="session_margin_stats_start">50dp</dimen>
+
+    //**************// fragment_stats //**************//
+
+    <dimen name="stats_TXT_allStats_size">10sp</dimen>
+    <dimen name="stats_TXT_allunits_size">5sp</dimen>
+    <dimen name="stats_margin_icons" >24dp</dimen>
+    <dimen name="stats_IMG_size">25dp</dimen>
+
+    //**************// cardview_session //**************//
+
+    <dimen name="cardview_card_hight">50dp</dimen>
+    <dimen name="cardview_margin_horizontal">20dp</dimen>
+
+    //**************// fragment_previous_sessions //**************//
+
+
+    //**************// other //**************//
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="icon_top_margin">24dp</dimen>
+    <dimen name="icon_bottom_margin">24dp</dimen>
+    <dimen name="title_bottom_margin">16dp</dimen>
+    <dimen name="field_width_standard">160dp</dimen>
+    <dimen name="button_horizontal_margin">8dp</dimen>
+
+</resources>

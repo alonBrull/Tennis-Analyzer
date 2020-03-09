@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "846494540799",
+    "firebase_url": "https://tennis-analyzer.firebaseio.com",
+    "project_id": "tennis-analyzer",
+    "storage_bucket": "tennis-analyzer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846494540799:android:8aff506e0b58a09c6efdca",
+        "android_client_info": {
+          "package_name": "com.example.tennisanalyzer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846494540799-kuklrb5ton0psv62b8o7reu4t0gu5c9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtLez3hRmDE2nS6TljX-ETXqDE0AGwd_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846494540799-kuklrb5ton0psv62b8o7reu4t0gu5c9c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

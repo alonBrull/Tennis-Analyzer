@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SessionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="950dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/player_color_background"/>
+    
+    <Button
+        android:id="@+id/session_BTN_startpause"
+        android:layout_width="@dimen/session_BTN_startPause_size"
+        android:layout_height="@dimen/session_BTN_startPause_size"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_session_pause_button"
+        />
+
+    <Button
+        android:id="@+id/session_BTN_stop"
+        android:layout_width="@dimen/session_BTN_stop_size"
+        android:layout_height="@dimen/session_BTN_stop_size"
+        android:layout_margin="@dimen/session_margin_stop"
+        android:background="@drawable/ic_session_stop"
+        />
+
+    <io.github.deweyreed.digitalwatchview.DigitalWatchView
+        android:id="@+id/digitalWatchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        app:dwv_background_alpha="0.1"
+        app:dwv_background_color="@android:color/black"
+        app:dwv_blink_colons="true"
+        app:dwv_foreground_color="@android:color/holo_green_light"
+        app:dwv_hours="00"
+        app:dwv_minutes="00"
+        app:dwv_normal_text_size="24sp"
+        app:dwv_seconds="00"
+        app:dwv_seconds_text_size="24sp"
+        app:dwv_show_background="true"
+        app:dwv_show_hours="true"
+        app:dwv_show_seconds="true"
+        app:dwv_show_two_digits="true" />
+    
+    <FrameLayout
+        android:id="@+id/session_FRM_stats"
+        android:layout_width="@dimen/session_FRM_stats_width"
+        android:layout_height="@dimen/session_FRM_stats_hight"
+        android:layout_below="@+id/session_BTN_startpause"
+        android:layout_marginTop="@dimen/session_margin_stats_start"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
